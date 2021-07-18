@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <script src="script.js"></script>
+    <style>.center {text-align: center}
+    </style>
+</head>
+<body>
+    <h1 class="center">PASSWORD GENERATOR</h1>
+    </hr> 
+    <form>
+        <div class="center">
+            How many characters?
+            <select name="chars" id="chars">
+                <option value=10>10</option>
+                <option value=11>11</option>
+                <option value=12>12</option>
+                <option value=13>13</option>
+                <option value=14>14</option>
+                <option value=15>15</option>
+                <option value=16>16</option>
+                <option value=17>17</option>
+                <option value=18>18</option>
+                <option value=19>19</option>
+                <option value=20>20</option>
+                <option value=21>21</option>
+            </select>
+            <br>
+        </div>
+        <div class="center">
+        <input type="checkbox" id="lowe" name="Capitals" value="lowe">
+        <label for="lowe">Lower Case</label>
+
+        <input type="checkbox" id="caps" name="Capitals" value="caps">
+        <label for="caps">Capitals</label>
+
+        <input type="checkbox" id="nums" name="Capitals" value="nums">
+        <label for="nums">Numbers</label>
+
+        <input type="checkbox" id="spec" name="Capitals" value="spec">
+        <label for="spec">Specials</label>
+
+    <br><br>
+    <button type="button" onclick="go();">GO</button>
+    <br>
+    <div id="output"></div>
+    </div>
+</form>
+</body>
+</html>
